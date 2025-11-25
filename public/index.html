@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create One-Time Link</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Create Self-Destructing Link</h2>
+        <textarea id="secretInput" placeholder="Enter your secret message here..."></textarea>
+        <button onclick="generateLink()">Get One-Time Link</button>
+        
+        <div id="result" class="hidden">
+            <p>Here is your one-time link:</p>
+            <div class="link-box">
+                <input type="text" id="linkOutput" readonly>
+                <button onclick="copyLink()">Copy</button>
+            </div>
+            <p class="note">Note: This link will work exactly once.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
